@@ -69,7 +69,7 @@
                 this.$axios.post('book',this.info).then(res=>{
                     if(res.code == 200){
                         this.$message({
-                        message: '添加成功，正在分类详情页',
+                        message: '添加成功，正在跳转分类详情页',
                         type: 'success'
                     });
                     setTimeout(()=>{

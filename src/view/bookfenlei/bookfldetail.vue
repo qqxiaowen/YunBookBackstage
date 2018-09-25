@@ -31,7 +31,7 @@
 
             <el-table-column label="操作" width="400">
                 <template slot-scope="scope">
-                    <el-button size="mini">
+                    <el-button size="mini" @click="addlunbo(scope.row._id)">
                         生成轮播图
                     </el-button>
                     <el-button size="mini" @click="revisebook(scope.row._id)" type="primary">
@@ -120,6 +120,9 @@
 
             revisebook(bookid){
                 this.$router.push(`/layout/revisebook?bookid=${bookid}`)
+            },
+            addlunbo(bookid){
+                this.$router.push(`/layout/addlunbo?bookid=${bookid}`)
             }
         },
         created(){

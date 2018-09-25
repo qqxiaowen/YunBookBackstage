@@ -114,7 +114,7 @@
                     size:this.size
                 }).then(res=>{
                     // console.log(res)
-                    if(res.data.length == this.size && this.maxpn >= this.count/this.size){
+                    if(res.data.length == this.size && this.maxpn >= this.count/this.size && this.maxpn == this.pn){
                         // console.log('要加页了')
                         this.count = this.count +this.size
                     }

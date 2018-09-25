@@ -21,6 +21,8 @@ const components = {
   booklist:()=> import('../view/book/booklist'),
   addbook:()=> import('../view/book/addbook'),
   revisebook:()=> import('../view/book/revisebook'),
+  lunbolist:()=> import('../view/lunbo/lunbolist'),
+  addlunbo:()=> import('../view/lunbo/addlunbo'),
 
 }
 
@@ -145,6 +147,27 @@ const router =new Router({
             title:'修改图书'
           },
           component: components.revisebook,
+        },
+        {
+          path:'lunbolist',
+          meta:{
+            title:'轮播图列表'
+          },
+          component: components.lunbolist,
+        },
+        {
+          path:'addlunbo',
+          meta:{
+            title:'添加轮播图'
+          },
+          component: components.addlunbo,
+        },
+        {
+          path:'xiugailunbo',
+          meta:{
+            title:'修改轮播图'
+          },
+          component: components.addlunbo,
         }
       ]
     }
